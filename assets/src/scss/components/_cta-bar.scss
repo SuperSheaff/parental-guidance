@@ -1,0 +1,13 @@
+.pg-cta-bar {
+    padding-bottom: 24px;
+    padding-top: 24px;
+    
+    @include media-breakpoint-up(lg) {
+        padding-bottom: 32px;
+        padding-top: 32px;
+    }
+
+    .pg-cta-bar__heading {
+        margin-bottom: 24px;
+    }
+}

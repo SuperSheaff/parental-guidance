@@ -1,0 +1,25 @@
+.pg-carousel {
+    h3 {
+        margin-bottom: 24px;
+    }
+
+    .pg-testimonials-carousel__item {
+        @include media-breakpoint-up(lg) {
+            padding: 32px;
+        }
+
+        background-color: $white;
+        border: 4px solid $blueWood;
+        border-radius: 0px 0px 0px 32px;
+        padding: 16px;
+
+        h5 {
+            margin-bottom: 24px;
+        }
+
+        h6,
+        p {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.pg-hero {
+    @include media-breakpoint-up(lg) {
+        background-position: center;
+    }
+
+    background-size: cover;
+    background-position: 80% 192px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    .pg-hero__height {
+        height: 100vh;
+
+        @include media-breakpoint-up(lg) {
+            height: calc(100vh);
+        }
+
+        .pg-hero__content {
+            @include media-breakpoint-up(md) {
+                padding-bottom: 96px;
+                padding-top: 96px;
+            }
+        }
+    }
+
+    .pg-hero__heading {
+        margin-bottom: 24px;
+    }
+
+    svg {
+        margin-bottom: -2px;
+    }
+}

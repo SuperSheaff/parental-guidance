@@ -1,0 +1,115 @@
+.pg-form {
+    @include media-breakpoint-up(lg) {
+        label {
+            margin-bottom: 0;
+        }
+
+        .pg-form__form {
+            padding: 24px;
+        }
+
+        .pg-form__description {
+            width: 85%;
+        }
+    }
+
+    .pg-form__subheading {
+        margin-bottom: 0;
+    }
+
+    .pg-form__heading {
+        margin-bottom: 24px;
+    }
+
+    .pg-form__form {
+        background-color: $white;
+        border-top: 8px solid $burntSienna;
+        padding: 32px;
+    }
+
+    label {
+        color: $silver;
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    .pg-form-control {
+        border: unset;
+        border-bottom: 1px solid $silver;
+        padding-bottom: 4px;
+        padding-top: 4px;
+        margin-bottom: 16px;
+        width: 100%;
+    }
+
+    .pg-btn-primary {
+        appearance: unset;
+        border: unset;
+        width: 100%;
+    }
+    
+    .wpcf7-spinner {
+        display: none;
+    }
+}
+
+.pg-form__form_subscribe {
+    label {
+        color: $white;
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    .pg-form-control {
+        background-color: transparent;
+        border: unset;
+        border-bottom: 1px solid $white;
+        color: $white;
+        padding-bottom: 4px;
+        padding-top: 4px;
+        margin-bottom: 16px;
+        text-align: center;
+        width: 100%;
+
+        &:focus {
+            outline: unset;
+        }
+    }
+
+    .wpcf7-checkbox {
+        display: flex;
+        margin-bottom: 16px;
+    }
+
+    .wpcf7-list-item {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    input[type=checkbox] {
+        @extend .my-auto;
+
+        background-color: unset;
+        border: 1px solid $white;
+        margin-right: 8px;
+        outline: unset;
+    }
+
+    .wpcf7-list-item-label {
+        color: $white;
+    }
+
+    .wpcf7-spinner {
+        display: none;
+    }
+}
+
+.pg-bg-special {
+    background: $blueWood;
+    background: -moz-linear-gradient(top,  $white 1%, $blueWood 1%, $blueWood 99%, $white 99%);
+    background: -webkit-linear-gradient(top,  $white 1%,$blueWood 1%, $blueWood 99%, $white 99%);
+    background: linear-gradient(to bottom,  $white 1%,$blueWood 1%, $blueWood 99%, $white 99%);
+}

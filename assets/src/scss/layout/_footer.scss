@@ -1,0 +1,33 @@
+.pg-footer {
+    @include media-breakpoint-up(md) {
+        .pg-footer__column {
+            margin-bottom: 0;
+        }
+        
+        padding-bottom: 32px;
+        padding-top: 32px;
+    }
+
+    padding-bottom: 24px;
+    padding-top: 24px;
+    position: relative;
+
+    .pg-footer__logo {
+        @include media-breakpoint-up(lg) {
+            max-height: 80px;
+            width: 160px;
+        }
+
+        fill: $white;
+        max-height: 64px;
+        width: 128px;
+    }
+    
+    a {
+        color: $white;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}

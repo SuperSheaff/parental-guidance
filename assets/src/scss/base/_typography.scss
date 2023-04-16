@@ -1,0 +1,64 @@
+/*=============================================
+=            Typography Variable and Declaration            =
+=============================================*/
+
+@font-face {
+    font-family: 'Amostely Signature';
+    src: url('../fonts/AmostelySignatureRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/WorkSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/WorkSans-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*----------  Font Family Variable  ----------*/
+
+$ff-worksans:   'Work Sans';
+$ff-amostely:   'Amostely Signature';
+
+/*----------  Font Size Variable  ----------*/
+
+$fs-d-h1        : 72px;
+$fs-d-h2        : 48px;
+$fs-d-h3        : 40px;
+$fs-d-h4        : 32px;
+$fs-d-h5        : 24px;
+$fs-d-h6        : 20px;
+$fs-d-body      : 16px;
+
+$fs-m-h1        : 36px;
+$fs-m-h2        : 32px;
+$fs-m-h3        : 28px;
+$fs-m-h4        : 24px;
+$fs-m-h5        : 20px;
+$fs-m-h6        : 18px;
+$fs-m-body      : 16px;
+
+/*----------  Font Weight Variable  ----------*/
+
+$fw-900: 900;
+$fw-800: 800;
+$fw-700: 700;
+$fw-600: 600;
+$fw-500: 500;
+$fw-400: 400;
+$fw-300: 300;
+$fw-200: 200;
+$fw-100: 100;
+
+/*=====  End of Typography Variable and Declaration  ======*/

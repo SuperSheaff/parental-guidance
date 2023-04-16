@@ -1,0 +1,101 @@
+.pg-header {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.3s;
+    z-index: 100;
+
+    .pg-header__nav {
+        @include media-breakpoint-up(lg) {
+            height: 112px;
+        }
+
+        display: flex;
+        height: 96px;
+        width: 100%;
+    }
+
+    .pg-header__nav-logo {
+        @include media-breakpoint-up(lg) {
+            max-height: 80px;
+            width: 160px;
+        }
+
+        fill: $white;
+        max-height: 64px;
+        transition: 0.3s;
+        width: 128px;
+    }
+
+    .pg-header__navbar-nav {
+        @include media-breakpoint-up(lg) {
+            width: unset;
+        }
+
+        display: flex;
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .pg-header__nav-item {
+        a,
+        p {
+            @extend .my-auto;
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            color: $white;
+            padding: 8px 16px;
+            transition: 0.3s;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding: 0;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding: 0px 24px;
+        }
+
+        display: flex;
+        font-weight: 400;
+        height: 100%;
+        padding: 0px 24px;
+    }
+
+    .pg-header__primary-menu {
+        @include media-breakpoint-up(lg) {
+            display: flex;
+        }
+
+        display: none;
+        margin-right: 32px;
+    }
+
+    &.scrolled {
+        background-color: $white;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05); 
+
+        .pg-header__nav-logo {
+            fill: $blueWood;
+        }
+
+        .pg-header__nav-item {
+            a,
+            p {
+                color: $blueWood;
+            }
+        }
+    }
+}
+
+.admin-bar {
+    .pg-header {
+        @include media-breakpoint-up(md) {
+            top: 32px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.pg-general-content {
+    img {
+        @extend .img-fluid;
+    }
+
+    @include media-breakpoint-up(lg) {
+        .pg-general-content__heading {
+            margin-bottom: 32px;
+        }
+    }
+
+    .pg-general-content__subheading {
+        margin-bottom: 4px;
+    }
+
+    .pg-general-content__heading {
+        margin-bottom: 16px;
+    }
+}
